@@ -89,8 +89,6 @@ def main():
             gap_to_fill = gap_to_fill.next_node.next_node
         else:
             assert False, "Code should never get here!"
-        if gap_to_fill == None:
-            break
 
     checksum = calc_checksum(first_node)
     print(checksum)
