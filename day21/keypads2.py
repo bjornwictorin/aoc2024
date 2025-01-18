@@ -212,6 +212,8 @@ def main():
     for code in codes:
         print(code)
         seq_lengths.append(calc_seq_len(code))
+    
+    print(f"NUM_DIR_ROBOTS: {NUM_DIR_ROBOTS}, seq_lengths: {seq_lengths}")
 
     complexities = [value * length for value, length in zip(values, seq_lengths)]
     print(sum(complexities))
